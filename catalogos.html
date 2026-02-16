@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogos Virtuales E-commerce | DevAgency</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .service-hero {
+            min-height: 60vh;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            background: linear-gradient(135deg, rgba(0, 122, 204, 0.1) 0%, rgba(13, 17, 23, 1) 70%);
+        }
+
+        .service-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .features-section,
+        .integrations-section {
+            padding: 6rem 0;
+        }
+
+        .features-grid-detailed {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 2.5rem;
+            border-radius: 12px;
+            border: 1px solid rgba(48, 54, 61, 0.5);
+            transition: var(--transition);
+        }
+
+        .feature-card:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-glow);
+        }
+
+        .feature-card i {
+            font-size: 2.5rem;
+            color: var(--accent-primary);
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .feature-card li {
+            color: var(--text-muted);
+            margin-bottom: 0.8rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feature-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--accent-primary);
+            font-weight: bold;
+        }
+
+        .cta-section {
+            background: var(--surface);
+            padding: 5rem 0;
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .integration-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .integration-item {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(48, 54, 61, 0.5);
+            transition: var(--transition);
+        }
+
+        .integration-item:hover {
+            border-color: var(--accent-primary);
+            transform: translateY(-5px);
+        }
+
+        .integration-item i {
+            font-size: 3rem;
+            color: var(--accent-primary);
+            margin-bottom: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .service-hero h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="bg-shapes">
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+        <div class="shape shape-3"></div>
+    </div>
+
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration: none; color: inherit;">
+                    <span class="code-icon">&lt;/&gt;</span> DevAgency
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="service-hero">
+            <div class="container">
+                <h1><i class="fas fa-store"></i> Catálogos Virtuales Inteligentes</h1>
+                <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 800px;">
+                    Convierte tu inventario en una experiencia de compra digital fluida. Catálogos responsive con
+                    carrito inteligente, gestión de stock en tiempo real y pedidos directos por WhatsApp o integración
+                    con tu ERP.
+                </p>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Funcionalidades Core</h2>
+                <div class="features-grid-detailed">
+                    <div class="feature-card">
+                        <i class="fas fa-boxes"></i>
+                        <h3>Gestión de Productos</h3>
+                        <ul>
+                            <li>Productos ilimitados con múltiples variantes</li>
+                            <li>Imágenes HD con zoom y vista 360°</li>
+                            <li>Descripciones ricas con HTML</li>
+                            <li>SKU, códigos de barra y referencia interna</li>
+                            <li>Importación masiva desde Excel/CSV</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-sitemap"></i>
+                        <h3>Categorización Inteligente</h3>
+                        <ul>
+                            <li>Categorías y subcategorías multinivel</li>
+                            <li>Etiquetas personalizadas (tags)</li>
+                            <li>Filtros avanzados por precio, marca, color</li>
+                            <li>Búsqueda fuzzy con autocompletado</li>
+                            <li>Productos relacionados automáticos</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-shopping-cart"></i>
+                        <h3>Carrito Dinámico</h3>
+                        <ul>
+                            <li>Agregar/quitar productos sin recargar</li>
+                            <li>Cálculo automático de totales e impuestos</li>
+                            <li>Cupones de descuento y promociones</li>
+                            <li>Carrito persistente (No pierde info al cerrar)</li>
+                            <li>Resumen visual antes de ordenar</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-warehouse"></i>
+                        <h3>Control de Stock</h3>
+                        <ul>
+                            <li>Inventario en tiempo real</li>
+                            <li>Alertas de stock bajo automáticas</li>
+                            <li>Productos agotados ocultos o en gris</li>
+                            <li>Reserva temporal durante el checkout</li>
+                            <li>Sincronización con tu sistema de inventario</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>Pedidos WhatsApp</h3>
+                        <ul>
+                            <li>Envío automático al hacer checkout</li>
+                            <li>Mensaje formateado con lista de productos</li>
+                            <li>Incluye cantidades, precios y total</li>
+                            <li>Datos del cliente precargados</li>
+                            <li>Múltiples números para departamentos</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-plug"></i>
+                        <h3>Integraciones ERP</h3>
+                        <ul>
+                            <li>API REST para conectar tu sistema</li>
+                            <li>Webhooks para eventos en tiempo real</li>
+                            <li>Sincronización bidireccional de inventario</li>
+                            <li>Exportación de pedidos a tu ERP</li>
+                            <li>Compatible con Odoo, SAP, etc.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" style="background: var(--surface);">
+            <div class="container">
+                <h2 class="section-title">Experiencia del Cliente</h2>
+                <div class="features-grid-detailed">
+                    <div class="feature-card">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Mobile-First</h3>
+                        <p style="color: var(--text-muted);">Diseñado primero para móvil. El 80% de tus clientes navega
+                            desde celular, por eso optimizamos cada interacción para pantallas pequeñas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-search"></i>
+                        <h3>Búsqueda Avanzada</h3>
+                        <p style="color: var(--text-muted);">Motor de búsqueda inteligente con corrección de errores,
+                            sinónimos y sugerencias. Encuentra productos incluso con búsquedas imprecisas.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>Lista de Deseos</h3>
+                        <p style="color: var(--text-muted);">Tus clientes pueden guardar productos favoritos para
+                            comprar después. Recordatorios automáticos cuando hay descuentos.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-star"></i>
+                        <h3>Reviews & Ratings</h3>
+                        <p style="color: var(--text-muted);">Sistema de calificaciones y reseñas. Modera comentarios
+                            antes de publicar. Aumenta la confianza y conversión.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-share-alt"></i>
+                        <h3>Compartir Productos</h3>
+                        <p style="color: var(--text-muted);">Botones para compartir productos en WhatsApp, Facebook,
+                            Twitter. Links directos con preview de imagen y precio.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-tachometer-alt"></i>
+                        <h3>Performance Elite</h3>
+                        <p style="color: var(--text-muted);">Carga en menos de 2 segundos. Lazy loading de imágenes,
+                            caché inteligente y CDN global para máxima velocidad.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="integrations-section">
+            <div class="container">
+                <h2 class="section-title">Integraciones Disponibles</h2>
+                <p class="section-subtitle">Conecta tu catálogo con las herramientas que ya usas</p>
+
+                <div class="integration-grid">
+                    <div class="integration-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <h3>WhatsApp Business</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">API oficial para mensajes automáticos
+                        </p>
+                    </div>
+
+                    <div class="integration-item">
+                        <i class="fab fa-google"></i>
+                        <h3>Google Sheets</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Sincroniza inventario en tiempo real</p>
+                    </div>
+
+                    <div class="integration-item">
+                        <i class="fas fa-credit-card"></i>
+                        <h3>Stripe / PayPal</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Pagos online seguros</p>
+                    </div>
+
+                    <div class="integration-item">
+                        <i class="fab fa-mailchimp"></i>
+                        <h3>Mailchimp</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Email marketing automatizado</p>
+                    </div>
+
+                    <div class="integration-item">
+                        <i class="fab fa-facebook"></i>
+                        <h3>Facebook Pixel</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Tracking para ads efectivos</p>
+                    </div>
+
+                    <div class="integration-item">
+                        <i class="fas fa-chart-bar"></i>
+                        <h3>Google Analytics</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Análisis completo de ventas</p>
+                    </div>
+
+                    <div class="integration-item">
+                        <i class="fas fa-truck"></i>
+                        <h3>FedEx / DHL</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Tracking de envíos automático</p>
+                    </div>
+
+                    <div class="integration-item">
+                        <i class="fas fa-database"></i>
+                        <h3>API Custom</h3>
+                        <p style="color: var(--text-muted); font-size: 0.9rem;">Conecta con cualquier sistema</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section" style="background: var(--surface);">
+            <div class="container">
+                <h2 class="section-title">Panel de Administración</h2>
+                <div class="features-grid-detailed">
+                    <div class="feature-card">
+                        <i class="fas fa-chart-pie"></i>
+                        <h3>Dashboard Analytics</h3>
+                        <ul>
+                            <li>Ventas del día, semana, mes</li>
+                            <li>Productos más vendidos</li>
+                            <li>Tasa de conversión</li>
+                            <li>Carritos abandonados</li>
+                            <li>Gráficos en tiempo real</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-clipboard-list"></i>
+                        <h3>Gestión de Pedidos</h3>
+                        <ul>
+                            <li>Vista completa de todos los pedidos</li>
+                            <li>Estados: Pendiente, Procesando, Enviado</li>
+                            <li>Notificaciones automáticas al cliente</li>
+                            <li>Impresión de órdenes de trabajo</li>
+                            <li>Exportación a Excel para contabilidad</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-users"></i>
+                        <h3>CRM Integrado</h3>
+                        <ul>
+                            <li>Base de datos de clientes</li>
+                            <li>Historial de compras por cliente</li>
+                            <li>Segmentación para marketing</li>
+                            <li>Clientes VIP automáticos</li>
+                            <li>Envío de promociones personalizadas</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-tags"></i>
+                        <h3>Promociones</h3>
+                        <ul>
+                            <li>Descuentos por categoría o producto</li>
+                            <li>Cupones con códigos únicos</li>
+                            <li>Ofertas flash con countdown</li>
+                            <li>2x1, 3x2 y combos especiales</li>
+                            <li>Programación automática por fechas</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-user-shield"></i>
+                        <h3>Multiusuario</h3>
+                        <ul>
+                            <li>Roles: Admin, Vendedor, Almacén</li>
+                            <li>Permisos granulares por sección</li>
+                            <li>Log de actividades por usuario</li>
+                            <li>Múltiples sucursales</li>
+                            <li>Cada vendedor ve sus propias ventas</li>
+                        </ul>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-mobile"></i>
+                        <h3>App Móvil Admin</h3>
+                        <ul>
+                            <li>Panel desde tu celular</li>
+                            <li>Notificaciones push de pedidos</li>
+                            <li>Actualizar stock rápidamente</li>
+                            <li>Aprobar/rechazar pedidos</li>
+                            <li>Escaneo de códigos de barra</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="features-section">
+            <div class="container">
+                <h2 class="section-title">Casos de Uso</h2>
+                <div class="features-grid-detailed">
+                    <div class="feature-card">
+                        <i class="fas fa-tshirt"></i>
+                        <h3>Tienda de Ropa</h3>
+                        <p style="color: var(--text-muted);">Catálogo con filtros por talla, color, marca. Variantes de
+                            producto (S, M, L, XL). Lookbooks y outfits sugeridos. Perfecto para boutiques y marcas de
+                            moda.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-wrench"></i>
+                        <h3>Ferretería</h3>
+                        <p style="color: var(--text-muted);">Miles de productos organizados por categoría. Búsqueda por
+                            código o nombre. Stock en múltiples sucursales. Cotizaciones para proyectos grandes.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-pizza-slice"></i>
+                        <h3>Restaurante</h3>
+                        <p style="color: var(--text-muted);">Menú digital con fotos apetitosas. Personalización de
+                            platillos (sin cebolla, extra queso). Horarios de disponibilidad. Pedidos para llevar o
+                            delivery.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-gem"></i>
+                        <h3>Joyería</h3>
+                        <p style="color: var(--text-muted);">Fotos en alta resolución con zoom. Videos 360° de cada
+                            pieza. Certificados de autenticidad digitales. Opción de personalización y grabado.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-couch"></i>
+                        <h3>Mueblería</h3>
+                        <p style="color: var(--text-muted);">Visualización 3D o AR (realidad aumentada). Dimensiones
+                            detalladas. Opciones de materiales y acabados. Financiamiento a meses sin intereses.</p>
+                    </div>
+
+                    <div class="feature-card">
+                        <i class="fas fa-book"></i>
+                        <h3>Librería</h3>
+                        <p style="color: var(--text-muted);">Búsqueda por autor, género, editorial. Previsualización de
+                            páginas. Sistema de reseñas. Recomendaciones basadas en historial de compra.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="container">
+                <h2>Lleva tu Negocio al Siguiente Nivel</h2>
+                <p style="font-size: 1.2rem; color: var(--text-muted); max-width: 700px; margin: 0 auto 2rem;">
+                    Desde $599 USD tienes un catálogo profesional completo. Incluye hasta 500 productos, hosting por 1
+                    año, capacitación y soporte técnico ilimitado.
+                </p>
+                <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="https://wa.me/yournumber" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> Solicitar Demo Personalizada
+                    </a>
+                    <a href="index.html#servicios" class="btn btn-outline">Otros Servicios</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contacto">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>Sobre Nosotros</h4>
+                <p>Agencia de desarrollo especializada en soluciones digitales de alto impacto para empresas que buscan
+                    crecer.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="rifas.html">Sistemas de Rifas</a></li>
+                    <li><a href="landings.html">Landing Pages</a></li>
+                    <li><a href="invitaciones.html">Invitaciones</a></li>
+                    <li><a href="catalogos.html">Catálogos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://wa.me/yournumber" class="btn-whatsapp">
+                        <i class="fab fa-whatsapp"></i> Escríbenos
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 DevAgency. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
