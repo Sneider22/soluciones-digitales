@@ -118,4 +118,36 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => ripple.remove(), 600);
         });
     });
+
+    // Tab switching logic
+    const tabBtns = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+
+    tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const target = btn.dataset.tab;
+
+            // Update buttons
+            tabBtns.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            // Update content
+            tabContents.forEach(content => {
+                if (content.id === target) {
+                    content.classList.add('active');
+                } else {
+                    content.classList.remove('active');
+                }
+            });
+
+            // Optional: Scroll to top of tabs container on mobile
+            if (window.innerWidth < 768) {
+                const container = document.querySelector('.tabs-container');
+                window.scrollTo({
+                    top: container.offsetTop - 100,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
 });

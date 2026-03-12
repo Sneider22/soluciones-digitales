@@ -137,6 +137,7 @@ nav {
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    text-decoration: none;
 }
 
 .code-icon {
@@ -715,6 +716,12 @@ footer {
     }
 }
 
+@media (min-width: 1025px) {
+    .services-grid, .process-steps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 @media (max-width: 480px) {
     .container {
         padding: 0 1.5rem;
@@ -736,3 +743,66 @@ footer {
         grid-template-columns: 1fr;
     }
 }
+
+/* Tabbed Interface */
+.tabs-container {
+    padding: 4rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+.tabs-header {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.tab-btn {
+    padding: 1.2rem 2.5rem;
+    background: var(--surface);
+    border: 1px solid rgba(48, 54, 61, 0.5);
+    border-radius: 40px;
+    color: var(--text-muted);
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    font-size: 1rem;
+}
+
+.tab-btn i {
+    margin-right: 0.8rem;
+}
+
+.tab-btn:hover {
+    border-color: var(--accent-primary);
+    color: var(--white);
+    background: rgba(0, 122, 204, 0.1);
+}
+
+.tab-btn.active {
+    background: var(--accent-gradient);
+    color: var(--white);
+    border: none;
+    box-shadow: var(--shadow-glow);
+}
+
+.tab-content {
+    display: none;
+    animation: fadeIn 0.6s ease;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .tabs-header {
+        gap: 0.8rem;
+    }
+    .tab-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}

@@ -158,11 +158,9 @@
 
     <header>
         <nav class="container">
-            <div class="logo">
-                <a href="index.html" style="text-decoration: none; color: inherit;">
-                    <span class="code-icon">&lt;/&gt;</span> DevAgency
-                </a>
-            </div>
+            <a href="index.html" class="logo">
+                <span class="code-icon">&lt;/&gt;</span> DevAgency
+            </a>
             <ul class="nav-links">
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="index.html#servicios">Servicios</a></li>
@@ -183,218 +181,218 @@
             </div>
         </section>
 
-        <section class="features-section">
+        <section class="tabs-container">
             <div class="container">
-                <h2 class="section-title">Funcionalidades Destacadas</h2>
-                <div class="features-grid-detailed">
-                    <div class="feature-card">
-                        <i class="fas fa-clock"></i>
-                        <h3>Cuenta Regresiva</h3>
-                        <ul>
-                            <li>Timer en tiempo real hasta el evento</li>
-                            <li>Animaciones elegantes y personalizables</li>
-                            <li>Múltiples zonas horarias automáticas</li>
-                            <li>Notificaciones push días antes</li>
-                            <li>Recordatorios automáticos por email</li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-card">
-                        <i class="fab fa-whatsapp"></i>
-                        <h3>Confirmación RSVP</h3>
-                        <ul>
-                            <li>Botón directo a WhatsApp preconfigurado</li>
-                            <li>Formulario digital de confirmación</li>
-                            <li>Gestión de acompañantes y menús</li>
-                            <li>Dashboard de confirmados en tiempo real</li>
-                            <li>Exportación de lista a Excel</li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-card">
-                        <i class="fas fa-images"></i>
-                        <h3>Galería Multimedia</h3>
-                        <ul>
-                            <li>Álbumes de fotos ilimitados</li>
-                            <li>Videos embebidos HD (YouTube/Vimeo)</li>
-                            <li>Slider automático con transiciones</li>
-                            <li>Lightbox para vista ampliada</li>
-                            <li>Opción de descarga para invitados</li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-card">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <h3>Geolocalización</h3>
-                        <ul>
-                            <li>Mapa interactivo del salón/iglesia</li>
-                            <li>Botón de navegación con Waze/Maps</li>
-                            <li>Múltiples ubicaciones (ceremonia + fiesta)</li>
-                            <li>Hoteles cercanos recomendados</li>
-                            <li>Parking y accesibilidad</li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-card">
-                        <i class="fas fa-gift"></i>
-                        <h3>Mesa de Regalos</h3>
-                        <ul>
-                            <li>Links a tiendas departamentales</li>
-                            <li>Número de cuenta bancaria elegante</li>
-                            <li>Código QR para transferencias</li>
-                            <li>Wish list personalizada</li>
-                            <li>Mensaje de agradecimiento automático</li>
-                        </ul>
-                    </div>
-
-                    <div class="feature-card">
-                        <i class="fas fa-music"></i>
-                        <h3>Experiencia Inmersiva</h3>
-                        <ul>
-                            <li>Música de fondo personalizable</li>
-                            <li>Animaciones parallax suaves</li>
-                            <li>Efectos de partículas (confetti, flores)</li>
-                            <li>Modo oscuro/claro automático</li>
-                            <li>Carga ultra rápida (&lt;1.5s)</li>
-                        </ul>
-                    </div>
+                <h2 class="section-title">Explora las Opciones</h2>
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="features"><i class="fas fa-magic"></i> Funcionalidades</button>
+                    <button class="tab-btn" data-tab="templates"><i class="fas fa-th-large"></i> Plantillas</button>
+                    <button class="tab-btn" data-tab="advantages"><i class="fas fa-award"></i> Ventajas</button>
                 </div>
-            </div>
-        </section>
 
-        <section class="templates-section" style="background: var(--surface);">
-            <div class="container">
-                <h2 class="section-title">Plantillas para Cada Ocasión</h2>
-                <p class="section-subtitle">Diseños exclusivos que se adaptan a la personalidad de tu evento</p>
+                <div class="tab-content active" id="features">
+                    <div class="features-grid-detailed">
+                        <div class="feature-card">
+                            <i class="fas fa-clock"></i>
+                            <h3>Cuenta Regresiva</h3>
+                            <ul>
+                                <li>Timer en tiempo real hasta el evento</li>
+                                <li>Animaciones elegantes y personalizables</li>
+                                <li>Múltiples zonas horarias automáticas</li>
+                                <li>Notificaciones push días antes</li>
+                                <li>Recordatorios automáticos por email</li>
+                            </ul>
+                        </div>
 
-                <div class="template-grid">
-                    <div class="template-card">
-                        <div class="template-preview">
-                            <i class="fas fa-heart"></i>
+                        <div class="feature-card">
+                            <i class="fab fa-whatsapp"></i>
+                            <h3>Confirmación RSVP</h3>
+                            <ul>
+                                <li>Botón directo a WhatsApp preconfigurado</li>
+                                <li>Formulario digital de confirmación</li>
+                                <li>Gestión de acompañantes y menús</li>
+                                <li>Dashboard de confirmados en tiempo real</li>
+                                <li>Exportación de lista a Excel</li>
+                            </ul>
                         </div>
-                        <div class="template-info">
-                            <h3>Boda Elegante</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño minimalista y sofisticado
-                                con paleta de blancos, dorados y pasteles. Animaciones suaves y tipografía serif.</p>
-                            <span style="color: var(--accent-primary); font-size: 0.9rem;">• Cuenta regresiva • RSVP •
-                                Galería • Mapa</span>
-                        </div>
-                    </div>
 
-                    <div class="template-card">
-                        <div class="template-preview">
-                            <i class="fas fa-crown"></i>
+                        <div class="feature-card">
+                            <i class="fas fa-images"></i>
+                            <h3>Galería Multimedia</h3>
+                            <ul>
+                                <li>Álbumes de fotos ilimitados</li>
+                                <li>Videos embebidos HD (YouTube/Vimeo)</li>
+                                <li>Slider automático con transiciones</li>
+                                <li>Lightbox para vista ampliada</li>
+                                <li>Opción de descarga para invitados</li>
+                            </ul>
                         </div>
-                        <div class="template-info">
-                            <h3>XV Años Glamour</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño vibrante con detalles
-                                brillantes, fondos degradados y animaciones festivas. Perfecto para celebraciones
-                                juveniles.</p>
-                            <span style="color: var(--accent-primary); font-size: 0.9rem;">• Slideshow • Música • Mesa
-                                de regalos • RSVP</span>
-                        </div>
-                    </div>
 
-                    <div class="template-card">
-                        <div class="template-preview">
-                            <i class="fas fa-baby"></i>
+                        <div class="feature-card">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <h3>Geolocalización</h3>
+                            <ul>
+                                <li>Mapa interactivo del salón/iglesia</li>
+                                <li>Botón de navegación con Waze/Maps</li>
+                                <li>Múltiples ubicaciones (ceremonia + fiesta)</li>
+                                <li>Hoteles cercanos recomendados</li>
+                                <li>Parking y accesibilidad</li>
+                            </ul>
                         </div>
-                        <div class="template-info">
-                            <h3>Baby Shower</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem;">Colores pastel, ilustraciones
-                                tiernas y diseño acogedor. Incluye wish list de productos para bebé con links directos.
-                            </p>
-                            <span style="color: var(--accent-primary); font-size: 0.9rem;">• Wish list • Juegos •
-                                Ubicación • Horarios</span>
-                        </div>
-                    </div>
 
-                    <div class="template-card">
-                        <div class="template-preview">
-                            <i class="fas fa-graduation-cap"></i>
+                        <div class="feature-card">
+                            <i class="fas fa-gift"></i>
+                            <h3>Mesa de Regalos</h3>
+                            <ul>
+                                <li>Links a tiendas departamentales</li>
+                                <li>Número de cuenta bancaria elegante</li>
+                                <li>Código QR para transferencias</li>
+                                <li>Wish list personalizada</li>
+                                <li>Mensaje de agradecimiento automático</li>
+                            </ul>
                         </div>
-                        <div class="template-info">
-                            <h3>Graduación</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño profesional con detalles
-                                académicos. Incluye cronología de logros, galería de fotos de la trayectoria.</p>
-                            <span style="color: var(--accent-primary); font-size: 0.9rem;">• Timeline • Galería •
-                                Mensaje personalizado</span>
-                        </div>
-                    </div>
 
-                    <div class="template-card">
-                        <div class="template-preview">
-                            <i class="fas fa-briefcase"></i>
-                        </div>
-                        <div class="template-info">
-                            <h3>Evento Corporativo</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño ejecutivo con agenda
-                                detallada, speakers, networking y registro de asistencia con código QR.</p>
-                            <span style="color: var(--accent-primary); font-size: 0.9rem;">• Agenda • Speakers •
-                                Registro • Networking</span>
-                        </div>
-                    </div>
-
-                    <div class="template-card">
-                        <div class="template-preview">
-                            <i class="fas fa-cake-candles"></i>
-                        </div>
-                        <div class="template-info">
-                            <h3>Cumpleaños Temático</h3>
-                            <p style="color: var(--text-muted); margin-bottom: 1rem;">Totalmente personalizable según el
-                                tema de la fiesta. Efectos animados, música de fondo y juegos interactivos.</p>
-                            <span style="color: var(--accent-primary); font-size: 0.9rem;">• Tema custom • Juegos •
-                                Confirmación • Música</span>
+                        <div class="feature-card">
+                            <i class="fas fa-music"></i>
+                            <h3>Experiencia Inmersiva</h3>
+                            <ul>
+                                <li>Música de fondo personalizable</li>
+                                <li>Animaciones parallax suaves</li>
+                                <li>Efectos de partículas (confetti, flores)</li>
+                                <li>Modo oscuro/claro automático</li>
+                                <li>Carga ultra rápida (&lt;1.5s)</li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <section class="features-section">
-            <div class="container">
-                <h2 class="section-title">Ventajas de lo Digital</h2>
-                <div class="features-grid-detailed">
-                    <div class="feature-card">
-                        <i class="fas fa-leaf"></i>
-                        <h3>Eco-Friendly</h3>
-                        <p style="color: var(--text-muted);">Cero papel, cero impresión. Contribuyes al medio ambiente
-                            mientras ahorras significativamente en costos de impresión y envío postal.</p>
+                <div class="tab-content" id="templates">
+                    <div class="template-grid">
+                        <div class="template-card">
+                            <div class="template-preview">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Boda Elegante</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño minimalista y sofisticado
+                                    con paleta de blancos, dorados y pasteles. Animaciones suaves y tipografía serif.</p>
+                                <span style="color: var(--accent-primary); font-size: 0.9rem;">• Cuenta regresiva • RSVP •
+                                    Galería • Mapa</span>
+                            </div>
+                        </div>
+
+                        <div class="template-card">
+                            <div class="template-preview">
+                                <i class="fas fa-crown"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>XV Años Glamour</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño vibrante con detalles
+                                    brillantes, fondos degradados y animaciones festivas. Perfecto para celebraciones
+                                    juveniles.</p>
+                                <span style="color: var(--accent-primary); font-size: 0.9rem;">• Slideshow • Música • Mesa
+                                    de regalos • RSVP</span>
+                            </div>
+                        </div>
+
+                        <div class="template-card">
+                            <div class="template-preview">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Baby Shower</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Colores pastel, ilustraciones
+                                    tiernas y diseño acogedor. Incluye wish list de productos para bebé con links directos.
+                                </p>
+                                <span style="color: var(--accent-primary); font-size: 0.9rem;">• Wish list • Juegos •
+                                    Ubicación • Horarios</span>
+                            </div>
+                        </div>
+
+                        <div class="template-card">
+                            <div class="template-preview">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Graduación</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño profesional con detalles
+                                    académicos. Incluye cronología de logros, galería de fotos de la trayectoria.</p>
+                                <span style="color: var(--accent-primary); font-size: 0.9rem;">• Timeline • Galería •
+                                    Mensaje personalizado</span>
+                            </div>
+                        </div>
+
+                        <div class="template-card">
+                            <div class="template-preview">
+                                <i class="fas fa-briefcase"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Evento Corporativo</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Diseño ejecutivo con agenda
+                                    detallada, speakers, networking y registro de asistencia con código QR.</p>
+                                <span style="color: var(--accent-primary); font-size: 0.9rem;">• Agenda • Speakers •
+                                    Registro • Networking</span>
+                            </div>
+                        </div>
+
+                        <div class="template-card">
+                            <div class="template-preview">
+                                <i class="fas fa-cake-candles"></i>
+                            </div>
+                            <div class="template-info">
+                                <h3>Cumpleaños Temático</h3>
+                                <p style="color: var(--text-muted); margin-bottom: 1rem;">Totalmente personalizable según el
+                                    tema de la fiesta. Efectos animados, música de fondo y juegos interactivos.</p>
+                                <span style="color: var(--accent-primary); font-size: 0.9rem;">• Tema custom • Juegos •
+                                    Confirmación • Música</span>
+                            </div>
+                        </div>
                     </div>
+                </div>
 
-                    <div class="feature-card">
-                        <i class="fas fa-share-alt"></i>
-                        <h3>Fácil Distribución</h3>
-                        <p style="color: var(--text-muted);">Un solo link para compartir por WhatsApp, email o redes
-                            sociales. Tus invitados lo abren desde cualquier dispositivo en segundos.</p>
-                    </div>
+                <div class="tab-content" id="advantages">
+                    <div class="features-grid-detailed">
+                        <div class="feature-card">
+                            <i class="fas fa-leaf"></i>
+                            <h3>Eco-Friendly</h3>
+                            <p style="color: var(--text-muted);">Cero papel, cero impresión. Contribuyes al medio ambiente
+                                mientras ahorras significativamente en costos de impresión y envío postal.</p>
+                        </div>
 
-                    <div class="feature-card">
-                        <i class="fas fa-edit"></i>
-                        <h3>Actualizaciones en Vivo</h3>
-                        <p style="color: var(--text-muted);">¿Cambio de ubicación o hora? Actualiza en tiempo real sin
-                            necesidad de reimprimir. Todos los invitados ven la información actualizada.</p>
-                    </div>
+                        <div class="feature-card">
+                            <i class="fas fa-share-alt"></i>
+                            <h3>Fácil Distribución</h3>
+                            <p style="color: var(--text-muted);">Un solo link para compartir por WhatsApp, email o redes
+                                sociales. Tus invitados lo abren desde cualquier dispositivo en segundos.</p>
+                        </div>
 
-                    <div class="feature-card">
-                        <i class="fas fa-chart-pie"></i>
-                        <h3>Estadísticas Detalladas</h3>
-                        <p style="color: var(--text-muted);">Sabe quién abrió la invitación, cuántas veces y desde
-                            dónde. Gestiona confirmaciones con dashboard en tiempo real.</p>
-                    </div>
+                        <div class="feature-card">
+                            <i class="fas fa-edit"></i>
+                            <h3>Actualizaciones en Vivo</h3>
+                            <p style="color: var(--text-muted);">¿Cambio de ubicación o hora? Actualiza en tiempo real sin
+                                necesidad de reimprimir. Todos los invitados ven la información actualizada.</p>
+                        </div>
 
-                    <div class="feature-card">
-                        <i class="fas fa-infinity"></i>
-                        <h3>Recuerdo Permanente</h3>
-                        <p style="color: var(--text-muted);">La invitación permanece online como recuerdo digital.
-                            Después del evento, actualízala con fotos de la celebración.</p>
-                    </div>
+                        <div class="feature-card">
+                            <i class="fas fa-chart-pie"></i>
+                            <h3>Estadísticas Detalladas</h3>
+                            <p style="color: var(--text-muted);">Sabe quién abrió la invitación, cuántas veces y desde
+                                dónde. Gestiona confirmaciones con dashboard en tiempo real.</p>
+                        </div>
 
-                    <div class="feature-card">
-                        <i class="fas fa-dollar-sign"></i>
-                        <h3>Ahorro Significativo</h3>
-                        <p style="color: var(--text-muted);">Hasta 70% de ahorro vs invitaciones impresas. Sin costos de
-                            papel, impresión, sobres ni envío. Invierte ese presupuesto en tu evento.</p>
+                        <div class="feature-card">
+                            <i class="fas fa-infinity"></i>
+                            <h3>Recuerdo Permanente</h3>
+                            <p style="color: var(--text-muted);">La invitación permanece online como recuerdo digital.
+                                Después del evento, actualízala con fotos de la celebración.</p>
+                        </div>
+
+                        <div class="feature-card">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h3>Ahorro Significativo</h3>
+                            <p style="color: var(--text-muted);">Hasta 70% de ahorro vs invitaciones impresas. Sin costos de
+                                papel, impresión, sobres ni envío. Invierte ese presupuesto en tu evento.</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -408,7 +406,7 @@
                     propio, hosting por 1 año y 3 rondas de revisión.
                 </p>
                 <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-                    <a href="https://wa.me/yournumber" class="btn btn-primary">
+                    <a href="https://wa.me/584161143514?text=Hola!%20Quisiera%20informaci%C3%B3n%20sobre%20las%20Invitaciones%20Digitales." class="btn btn-primary">
                         <i class="fab fa-whatsapp"></i> Cotizar mi Invitación
                     </a>
                     <a href="index.html#servicios" class="btn btn-outline">Explorar Servicios</a>
@@ -438,14 +436,14 @@
                 <div class="social-links">
                     <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
                     <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://wa.me/yournumber" class="btn-whatsapp">
+                    <a href="https://wa.me/584161143514?text=Hola!%20Quisiera%20informaci%C3%B3n%20sobre%20las%20Invitaciones%20Digitales." class="btn-whatsapp">
                         <i class="fab fa-whatsapp"></i> Escríbenos
                     </a>
                 </div>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 DevAgency. Todos los derechos reservados.</p>
+            <p>&copy; 2026 DevAgency. Todos los derechos reservados.</p>
         </div>
     </footer>
 
